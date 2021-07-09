@@ -11,7 +11,7 @@ public class HelloController {
 	}
 	@GetMapping("/")
 	public String show() {
-		return "WELCOME DOCKER NP DJSFJDJDFJ";
+		return "WELCOME DOCKER NP DJSFJDJDFJ.....................||||||||||||";
 	}
 
 }
