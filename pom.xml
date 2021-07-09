@@ -35,6 +35,28 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+
+			
+			<groupId>com.spotify</groupId>
+	<artifactId>dockerfile-maven-plugin</artifactId>
+	<version>1.4.13</version>
+	<executions>
+		<execution>
+			<id>default</id>
+			<goals>
+				<goal>build</goal>
+				<goal>push</goal>
+			</goals>
+		</execution>
+	</executions>
+	<configuration>
+	<repository>gmantrig/bootapp1</repository>
+	<tag>5.1</tag>
+	
+	<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
+	</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
