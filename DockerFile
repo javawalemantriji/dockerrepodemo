@@ -1,3 +1,4 @@
 FROM openjdk:8-jdk-alpine
-COPY target/dockerdemo-0.0.1-SNAPSHOT.jar  dockerdemo-0.0.1-SNAPSHOT.jar
-CMD ["java","-jar","/dockerdemo-0.0.1-SNAPSHOT.jar"]
+VOLUME /temp
+ADD target/dockerdemo-0.0.1-SNAPSHOT.jar  dockerdemo-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/dockerdemo-0.0.1-SNAPSHOT.jar"]
