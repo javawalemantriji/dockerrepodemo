@@ -51,8 +51,8 @@
 		</execution>
 	</executions>
 	<configuration>
-	<repository>gmantrig/bootapp1</repository>
-	<tag>5.1</tag>
+	<repository>gmantrig/jenkinspush</repository>
+	<tag>1.0</tag>
 	
 	<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 	</configuration>
